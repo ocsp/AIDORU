@@ -1,0 +1,14 @@
+# Rules for all pages
+/*
+    Cache-Control: public, max-age=3600
+    Access-Control-Allow-Origin: https://aidoru.net
+    X-Content-Type-Options: nosniff
+    X-Frame-Options: DENY
+    X-XSS-Protection: 1; mode=block
+
+# Cache control for static files
+/img/*
+    Cache-Control: public, max-age=31536000, immutable
+
+/favicon.ico
+    Cache-Control: public, max-age=31536000, immutable
